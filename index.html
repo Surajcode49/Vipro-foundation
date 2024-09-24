@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipra Foundation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Vipra Foundation Form</h1>
+    <form id="vipraForm">
+        <!-- Candidate Name -->
+        <div class="form-group">
+            <label for="candidateName">Candidate's Name</label>
+            <input type="text" id="candidateName" name="candidateName" placeholder="Enter Name">
+        </div>
+
+        <!-- Monthly Income -->
+        <div class="form-group">
+            <label for="monthlyIncome">Monthly Income</label>
+            <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="Enter Monthly Income">
+        </div>
+
+        <!-- Manglik -->
+        <div class="form-group">
+            <label for="manglik">Manglik (Yes/No)</label>
+            <select id="manglik" name="manglik">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <!-- Birth Place -->
+        <div class="form-group">
+            <label for="birthPlace">Birth Place</label>
+            <input type="text" id="birthPlace" name="birthPlace" placeholder="Enter Birth Place">
+        </div>
+
+        <!-- Birth Date -->
+        <div class="form-group">
+            <label for="birthDate">Birth Date</label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+
+        <!-- Height -->
+        <div class="form-group">
+            <label for="height">Height (Feet/Inches)</label>
+            <input type="text" id="height" name="height" placeholder="e.g., 5'8">
+        </div>
+
+        <!-- Skin Color -->
+        <div class="form-group">
+            <label for="skinColor">Skin Color</label>
+            <input type="text" id="skinColor" name="skinColor" placeholder="e.g., Fair, Wheatish">
+        </div>
+
+        <!-- Education -->
+        <div class="form-group">
+            <label for="education">Education</label>
+            <input type="text" id="education" name="education" placeholder="Enter Education Qualification">
+        </div>
+
+        <!-- Father's Name -->
+        <div class="form-group">
+            <label for="fatherName">Father's Name</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="Enter Father's Name">
+        </div>
+
+        <!-- Family Profession -->
+        <div class="form-group">
+            <label for="familyProfession">Family Profession</label>
+            <input type="text" id="familyProfession" name="familyProfession" placeholder="Enter Profession">
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number">
+        </div>
+
+        <!-- Gotra Details -->
+        <div class="form-group">
+            <label for="gotraSelf">Self Gotra</label>
+            <input type="text" id="gotraSelf" name="gotraSelf" placeholder="Enter Gotra">
+        </div>
+
+        <div class="form-group">
+            <label for="gotraFather">Father's Gotra</label>
+            <input type="text" id="gotraFather" name="gotraFather" placeholder="Enter Father's Gotra">
+        </div>
+
+        <div class="form-group">
+            <label for="gotraMother">Mother's Gotra</label>
+            <input type="text" id="gotraMother" name="gotraMother" placeholder="Enter Mother's Gotra">
+        </div>
+
+        <div class="form-group">
+            <label for="gotraGrandmother">Grandmother's Gotra</label>
+            <input type="text" id="gotraGrandmother" name="gotraGrandmother" placeholder="Enter Grandmother's Gotra">
+        </div>
+
+        <!-- Payment Confirmation -->
+        <div class="form-group">
+            <label for="paymentConfirmed">
+                <input type="checkbox" id="paymentConfirmed" name="paymentConfirmed"> Payment Confirmed
+            </label>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-code">
+            <h3>QR Code</h3>
+            <!-- Placeholder for QR Code -->
+            <img src="./src/qr3.jpg" alt="QR Code" style="max-width: 150px;">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
