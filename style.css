@@ -165,8 +165,56 @@ input, textarea, select {
     transform: translateY(-2px);
 }
 
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     .container {
-        padding: 20px 15px;
+        padding: 20px 25px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    textarea,
+    select {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    input[type="submit"],
+    button[type="button"] {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    textarea,
+    select {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    input[type="submit"],
+    button[type="button"] {
+        font-size: 14px;
+        padding: 8px 20px;
     }
 }
