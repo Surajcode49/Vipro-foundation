@@ -1,129 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipra Foundation Form</title>
+    <title>विप्र फाउंडेशन फॉर्म</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Vipra Foundation Form</h1>
-    <form id="vipraForm">
-        <!-- Candidate Name -->
+    <h1>विप्र फाउंडेशन कोटा जोन</h1>
+    <p>ब्राह्मण युवक युवती परिचय सम्मेलन</p>
+    <p>दिनांक: 22/12/2024</p>
+    <p>कार्यक्रम स्थान - मंगलदेवता गार्डन, रंगबाड़ी रोड, कोटा</p>
+
+    <form id="vipraFormHindi">
+        <!-- प्रत्याशी का नाम -->
         <div class="form-group">
-            <label for="candidateName">Candidate's Name</label>
-            <input type="text" id="candidateName" name="candidateName" placeholder="Enter Name">
+            <label for="candidateName">प्रत्याशी वर/वधू का नाम</label>
+            <input type="text" id="candidateName" name="candidateName" placeholder="नाम दर्ज करें">
         </div>
 
-        <!-- Monthly Income -->
+        <!-- मासिक आय -->
         <div class="form-group">
-            <label for="monthlyIncome">Monthly Income</label>
-            <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="Enter Monthly Income">
+            <label for="monthlyIncome">मासिक आय</label>
+            <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="मासिक आय दर्ज करें">
         </div>
 
-        <!-- Manglik -->
+        <!-- मांगलिक -->
         <div class="form-group">
-            <label for="manglik">Manglik (Yes/No)</label>
+            <label for="manglik">मांगलिक (हाँ/नहीं)</label>
             <select id="manglik" name="manglik">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
+                <option value="yes">हाँ</option>
+                <option value="no">नहीं</option>
             </select>
         </div>
 
-        <!-- Birth Place -->
+        <!-- जन्म स्थान -->
         <div class="form-group">
-            <label for="birthPlace">Birth Place</label>
-            <input type="text" id="birthPlace" name="birthPlace" placeholder="Enter Birth Place">
+            <label for="birthPlace">जन्म स्थान</label>
+            <input type="text" id="birthPlace" name="birthPlace" placeholder="जन्म स्थान दर्ज करें">
         </div>
 
-        <!-- Birth Date -->
+        <!-- जन्म दिनांक -->
         <div class="form-group">
-            <label for="birthDate">Birth Date</label>
+            <label for="birthDate">जन्म दिनांक</label>
             <input type="date" id="birthDate" name="birthDate">
         </div>
 
-        <!-- Height -->
+        <!-- ऊंचाई -->
         <div class="form-group">
-            <label for="height">Height (Feet/Inches)</label>
-            <input type="text" id="height" name="height" placeholder="e.g., 5'8">
+            <label for="height">ऊंचाई (फीट/इंच)</label>
+            <input type="text" id="height" name="height" placeholder="उदाहरण: 5'8">
         </div>
 
-        <!-- Skin Color -->
+        <!-- रंग -->
         <div class="form-group">
-            <label for="skinColor">Skin Color</label>
-            <input type="text" id="skinColor" name="skinColor" placeholder="e.g., Fair, Wheatish">
+            <label for="skinColor">रंग</label>
+            <input type="text" id="skinColor" name="skinColor" placeholder="उदाहरण: गोरा, गेहुंआ">
         </div>
 
-        <!-- Education -->
+        <!-- शिक्षा -->
         <div class="form-group">
-            <label for="education">Education</label>
-            <input type="text" id="education" name="education" placeholder="Enter Education Qualification">
+            <label for="education">शिक्षा</label>
+            <input type="text" id="education" name="education" placeholder="शिक्षा दर्ज करें">
         </div>
 
-        <!-- Father's Name -->
+        <!-- पिता का नाम -->
         <div class="form-group">
-            <label for="fatherName">Father's Name</label>
-            <input type="text" id="fatherName" name="fatherName" placeholder="Enter Father's Name">
+            <label for="fatherName">पिता का नाम</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="पिता का नाम दर्ज करें">
         </div>
 
-        <!-- Family Profession -->
+        <!-- परिवार का व्यवसाय -->
         <div class="form-group">
-            <label for="familyProfession">Family Profession</label>
-            <input type="text" id="familyProfession" name="familyProfession" placeholder="Enter Profession">
+            <label for="familyProfession">व्यवसाय</label>
+            <input type="text" id="familyProfession" name="familyProfession" placeholder="व्यवसाय दर्ज करें">
         </div>
 
-        <!-- Address -->
+        <!-- पता -->
         <div class="form-group">
-            <label for="address">Address</label>
-            <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+            <label for="address">पता</label>
+            <textarea id="address" name="address" placeholder="पता दर्ज करें"></textarea>
         </div>
 
-        <!-- Mobile Number -->
+        <!-- मोबाइल नंबर -->
         <div class="form-group">
-            <label for="mobile">Mobile Number</label>
-            <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number">
+            <label for="mobile">मोबाइल नं.</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="मोबाइल नंबर दर्ज करें">
         </div>
 
-        <!-- Gotra Details -->
+        <!-- गोत्र विवरण -->
         <div class="form-group">
-            <label for="gotraSelf">Self Gotra</label>
-            <input type="text" id="gotraSelf" name="gotraSelf" placeholder="Enter Gotra">
-        </div>
-
-        <div class="form-group">
-            <label for="gotraFather">Father's Gotra</label>
-            <input type="text" id="gotraFather" name="gotraFather" placeholder="Enter Father's Gotra">
+            <label for="gotraSelf">स्वयं का गोत्र</label>
+            <input type="text" id="gotraSelf" name="gotraSelf" placeholder="गोत्र दर्ज करें">
         </div>
 
         <div class="form-group">
-            <label for="gotraMother">Mother's Gotra</label>
-            <input type="text" id="gotraMother" name="gotraMother" placeholder="Enter Mother's Gotra">
+            <label for="gotraMother">माँ का गोत्र</label>
+            <input type="text" id="gotraMother" name="gotraMother" placeholder="माँ का गोत्र दर्ज करें">
         </div>
 
         <div class="form-group">
-            <label for="gotraGrandmother">Grandmother's Gotra</label>
-            <input type="text" id="gotraGrandmother" name="gotraGrandmother" placeholder="Enter Grandmother's Gotra">
+            <label for="gotraGrandmother">दादी का गोत्र</label>
+            <input type="text" id="gotraGrandmother" name="gotraGrandmother" placeholder="दादी का गोत्र दर्ज करें">
+        </div>
+
+        <div class="form-group">
+            <label for="gotraNani">नानी का गोत्र</label>
+            <input type="text" id="gotraNani" name="gotraNani" placeholder="नानी का गोत्र दर्ज करें">
         </div>
 
         <!-- Payment Confirmation -->
         <div class="form-group">
             <label for="paymentConfirmed">
-                <input type="checkbox" id="paymentConfirmed" name="paymentConfirmed"> Payment Confirmed
+                <input type="checkbox" id="paymentConfirmed" name="paymentConfirmed"> भुगतान की पुष्टि
             </label>
-        </div>
-
-        <!-- QR Code Section -->
-        <div class="qr-code">
-            <h3>QR Code</h3>
-            <!-- Placeholder for QR Code -->
-            <img src="./src/qr3.jpg" alt="QR Code" style="max-width: 150px;">
         </div>
 
         <!-- Submit Button -->
         <div class="form-group submit-btn">
-            <input type="submit" value="Submit">
+            <input type="submit" value="सबमिट करें">
         </div>
     </form>
 </div>
