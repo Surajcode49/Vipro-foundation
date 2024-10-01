@@ -1,57 +1,63 @@
-document.getElementById("vipraForm").addEventListener("submit", function(event) {
+// Initialize EmailJS with your public key
+(function () {
+    emailjs.init("pLsiyttn3ZjuOIsn7"); // Your EmailJS public key
+})();
+
+document.getElementById("vipraFormHindi").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    // Get the form elements
-    const paymentConfirmed = document.getElementById("paymentConfirmed").checked;
-    const candidateName = document.getElementById("candidateName").value.trim();
-    const monthlyIncome = document.getElementById("monthlyIncome").value.trim();
-    const birthPlace = document.getElementById("birthPlace").value.trim();
+    // Collect form data
+    const candidateName = document.getElementById("candidateName").value;
+    const monthlyIncome = document.getElementById("monthlyIncome").value;
+    const manglik = document.getElementById("manglik").value;
+    const birthPlace = document.getElementById("birthPlace").value;
+    const birthDate = document.getElementById("birthDate").value;
+    const height = document.getElementById("height").value;
+    const skinColor = document.getElementById("skinColor").value;
+    const education = document.getElementById("education").value;
+    const fatherName = document.getElementById("fatherName").value;
+    const familyProfession = document.getElementById("familyProfession").value;
+    const address = document.getElementById("address").value;
+    const mobile = document.getElementById("mobile").value;
+    const gotraSelf = document.getElementById("gotraSelf").value;
+    const gotraMother = document.getElementById("gotraMother").value;
+    const gotraGrandmother = document.getElementById("gotraGrandmother").value;
+    const gotraNani = document.getElementById("gotraNani").value;
 
-    // Clear previous error highlights
-    clearErrorHighlighting();
+    // Prepare email data
+    const templateParams = {
+        candidateName,
+        monthlyIncome,
+        manglik,
+        birthPlace,
+        birthDate,
+        height,
+        skinColor,
+        education,
+        fatherName,
+        familyProfession,
+        address,
+        mobile,
+        gotraSelf,
+        gotraMother,
+        gotraGrandmother,
+        gotraNani,
+        to_name: 'Vipra Foundation', 
+        message: 'Now Now Inc' 
+    };
 
-    // Check if payment is confirmed
-    if (!paymentConfirmed) {
-        alert("Please confirm the payment before submitting the form.");
-        return;
-    }
+    console.log("Sending email with the following parameters:", templateParams); // Debug log
 
-    // Validate the form fields
-    if (!candidateName) {
-        showError("candidateName", "Please enter the candidate's name.");
-        return;
-    }
+    // Send email
+    emailjs.send("service_9dhfjcr", "template_0ttni4c", templateParams)
+        .then(function(response) {
+            console.log('Email sent successfully!', response.status, response.text);
+            alert("फॉर्म सफलतापूर्वक सबमिट किया गया!"); // Message in Hindi
+        }, function(error) {
+            console.error('Failed to send email. Error:', error);
+            alert("फॉर्म सबमिट करने में समस्या आई। कृपया पुनः प्रयास करें।" + "\n" + error.text); // Log error
+        });
 
-    if (!monthlyIncome || isNaN(monthlyIncome)) {
-        showError("monthlyIncome", "Please enter a valid monthly income.");
-        return;
-    }
-
-    if (!birthPlace) {
-        showError("birthPlace", "Please enter the birth place.");
-        return;
-    }
-
-    // Form submission success
-    alert("Form submitted successfully!");
-
-    // Optionally, send the form data to a server using Fetch or AJAX
-
-    // Reset the form after successful submission
-    document.getElementById("vipraForm").reset();
+    // Reset form fields
+    this.reset();
 });
-
-// Function to highlight fields with errors
-function showError(fieldId, message) {
-    const field = document.getElementById(fieldId);
-    field.style.borderColor = "red";
-    alert(message);
-}
-
-// Function to clear error highlighting
-function clearErrorHighlighting() {
-    const fields = ["candidateName", "monthlyIncome", "birthPlace"];
-    fields.forEach(fieldId => {
-        document.getElementById(fieldId).style.borderColor = "";
-    });
-}
