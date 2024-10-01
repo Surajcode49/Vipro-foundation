@@ -31,6 +31,21 @@ body {
     transform: scale(1.02);
 }
 
+/* Logo */
+.logo {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust the size as needed */
+}
+
+.logo-left {
+    left: 20px; /* Adjust the positioning */
+}
+
+.logo-right {
+    right: 20px; /* Adjust the positioning */
+}
+
 /* Title */
 h1 {
     text-align: center;
